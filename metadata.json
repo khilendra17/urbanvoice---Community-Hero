@@ -1,0 +1,6 @@
+{
+  "name": "UrbanVoice",
+  "description": "An AI-powered civic intelligence platform that bridges the gap between citizens and municipal authorities, empowering residents to report issues and track resolutions in real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Elegant Dark Theme Colors */
+  --color-primary: #F59E0B; /* Amber-500 */
+  --color-background: #0A0A0B; /* Pure dark black-slate */
+  --color-surface: #121214; /* Pure dark card background */
+  --color-on-surface: #E2E2E2; /* Bright soft gray text */
+  --color-on-surface-variant: rgba(226, 226, 226, 0.4);
+  --color-inverse-surface: #E2E2E2;
+  --color-inverse-on-surface: #0A0A0B;
+  --color-outline: rgba(255, 255, 255, 0.05); /* Extremely fine dark lines */
+  --color-outline-variant: rgba(255, 255, 255, 0.08);
+  --color-surface-tint: #F59E0B;
+  
+  --color-primary-container: #1A1A1C;
+  --color-on-primary-container: #E2E2E2;
+  --color-inverse-primary: #F59E0B;
+  
+  --color-secondary: #EA580C; /* Orange accent */
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: rgba(245, 158, 11, 0.15);
+  --color-on-secondary-container: #F59E0B;
+  
+  --color-tertiary: #121214;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #1A1A1C;
+  --color-on-tertiary-container: #F59E0B;
+  
+  --color-error: #EF4444;
+  --color-on-error: #ffffff;
+  --color-error-container: rgba(239, 68, 68, 0.15);
+  --color-on-error-container: #EF4444;
+  
+  --color-primary-fixed: #1A1A1C;
+  --color-primary-fixed-dim: #121214;
+  --color-on-primary-fixed: #E2E2E2;
+  --color-on-primary-fixed-variant: #F59E0B;
+  
+  --color-secondary-fixed: #1A1A1C;
+  --color-secondary-fixed-dim: #121214;
+  --color-on-secondary-fixed: #E2E2E2;
+  --color-on-secondary-fixed-variant: #EA580C;
+  
+  --color-tertiary-fixed: #1A1A1C;
+  --color-tertiary-fixed-dim: #121214;
+  --color-on-tertiary-fixed: #E2E2E2;
+  --color-on-tertiary-fixed-variant: #F59E0B;
+  
+  --color-surface-container: #0F0F11;
+  --color-surface-container-lowest: #0A0A0B;
+  --color-surface-container-low: #0F0F11;
+  --color-surface-container-high: #121214;
+  --color-surface-container-highest: #1A1A1C;
+  
+  --color-surface-variant: #121214;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0A0A0B;
+  color: #E2E2E2;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.glass-effect {
+  backdrop-filter: blur(8px);
+  background-color: rgba(10, 10, 11, 0.85);
+}
+
+.glass-panel {
+  background: rgba(18, 18, 20, 0.7);
+  backdrop-filter: blur(8px);
+}
